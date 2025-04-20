@@ -3,7 +3,7 @@ while true; do
     
     # Check if there are staged changes before committing
     git diff --cached --quiet || { 
-        git commit -m "Auto-commit: $(date)"
+        git commit -m "commit: $(date)"
         git push origin main  # Change 'main' to your branch name if needed
     }
 
